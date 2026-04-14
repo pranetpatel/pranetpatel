@@ -197,6 +197,15 @@
       color: var(--muted);
       white-space: nowrap;
     }
+    .now-row a {
+      color: var(--text);
+      text-decoration: underline;
+      text-decoration-color: var(--border);
+      text-underline-offset: 3px;
+      transition: text-decoration-color 0.15s;
+    }
+    .now-row a:hover { text-decoration-color: var(--accent); }
+
     .now-note {
       font-family: 'DM Mono', monospace;
       font-size: 0.67rem;
@@ -381,8 +390,20 @@
     <div class="now-block">
       <h2>listening</h2>
       <div class="now-row">
-        <span>Add what you're into rn</span>
+        <span><a href="https://open.spotify.com/track/6A1gvxMuw4NFLLfPoY5JTK" target="_blank">Private Party — offtide!</a></span>
         <span class="nr-meta">on repeat</span>
+      </div>
+      <div class="now-row">
+        <span><a href="https://open.spotify.com/track/3RPP2rryn9UBDMg2NFBhop" target="_blank">When You Need Me — Avenoir</a></span>
+        <span class="nr-meta">on repeat</span>
+      </div>
+      <div class="now-row">
+        <span>Lex Fridman Podcast</span>
+        <span class="nr-meta">podcast</span>
+      </div>
+      <div class="now-row">
+        <span>The Mel Robbins Podcast</span>
+        <span class="nr-meta">podcast</span>
       </div>
     </div>
 
