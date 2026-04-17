@@ -1,5 +1,1 @@
-{
-  "rewrites": [
-    { "source": "/resume.pdf", "destination": "/public/Resume.pdf" }
-  ]
-}
+{}
