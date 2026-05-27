@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pranet Patel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
   <style>
     :root {
       --bg: #faf9f7;
@@ -16,8 +19,17 @@
       --border: #e5e4df;
     }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { font-size: 15px; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 15px;
+    }
 
     body {
       background: var(--bg);
@@ -49,7 +61,10 @@
       cursor: pointer;
     }
 
-    .nav-links { display: flex; gap: 1.6rem; }
+    .nav-links {
+      display: flex;
+      gap: 1.6rem;
+    }
 
     .nav-links a {
       font-family: 'DM Mono', monospace;
@@ -58,15 +73,32 @@
       text-decoration: none;
       transition: color 0.15s;
     }
-    .nav-links a:hover, .nav-links a.active { color: var(--text); }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--text);
+    }
 
     /* PAGES */
-    .page { display: none; animation: up 0.2s ease; }
-    .page.active { display: block; }
+    .page {
+      display: none;
+      animation: up 0.2s ease;
+    }
+
+    .page.active {
+      display: block;
+    }
 
     @keyframes up {
-      from { opacity: 0; transform: translateY(5px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(5px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* HOME */
@@ -77,10 +109,22 @@
       letter-spacing: -0.02em;
       margin-bottom: 1.5rem;
     }
-    .greeting em { font-style: italic; font-weight: 400; color: var(--muted); }
 
-    .bio { font-size: 0.96rem; line-height: 1.72; }
-    .bio + .bio { margin-top: 0.5rem; }
+    .greeting em {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    .bio {
+      font-size: 0.96rem;
+      line-height: 1.72;
+    }
+
+    .bio+.bio {
+      margin-top: 0.5rem;
+    }
+
     .bio a {
       color: var(--text);
       text-decoration: underline;
@@ -88,7 +132,10 @@
       text-underline-offset: 3px;
       transition: text-decoration-color 0.15s;
     }
-    .bio a:hover { text-decoration-color: var(--accent); }
+
+    .bio a:hover {
+      text-decoration-color: var(--accent);
+    }
 
     .label {
       font-family: 'DM Mono', monospace;
@@ -100,17 +147,22 @@
       margin-bottom: 0.7rem;
     }
 
-    .arrow-list { list-style: none; }
+    .arrow-list {
+      list-style: none;
+    }
+
     .arrow-list li {
       font-size: 0.92rem;
       padding: 0.17rem 0;
     }
+
     .arrow-list .arr {
       font-family: 'DM Mono', monospace;
       font-size: 0.72rem;
       color: var(--muted);
       margin-right: 0.35rem;
     }
+
     .arrow-list a {
       color: var(--text);
       text-decoration: underline;
@@ -118,11 +170,22 @@
       text-underline-offset: 3px;
       transition: color 0.15s, text-decoration-color 0.15s;
     }
-    .arrow-list a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+
+    .arrow-list a:hover {
+      color: var(--accent);
+      text-decoration-color: var(--accent);
+    }
 
     /* PROJECTS */
-    .proj { padding: 1.25rem 0; border-bottom: 1px solid var(--border); }
-    .proj:first-child { border-top: 1px solid var(--border); }
+    .proj {
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .proj:first-child {
+      border-top: 1px solid var(--border);
+    }
+
     .proj-top {
       display: flex;
       justify-content: space-between;
@@ -130,6 +193,7 @@
       gap: 1rem;
       margin-bottom: 0.3rem;
     }
+
     .proj-name {
       font-size: 0.97rem;
       font-weight: 500;
@@ -138,17 +202,29 @@
       letter-spacing: -0.01em;
       transition: color 0.15s;
     }
-    .proj-name:hover { color: var(--accent); }
+
+    .proj-name:hover {
+      color: var(--accent);
+    }
+
     .proj-lang {
       font-family: 'DM Mono', monospace;
       font-size: 0.67rem;
       color: var(--muted);
       white-space: nowrap;
     }
-    .proj-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
+
+    .proj-desc {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
 
     /* NOW */
-    .now-block { margin-bottom: 2.3rem; }
+    .now-block {
+      margin-bottom: 2.3rem;
+    }
+
     .now-block h2 {
       font-family: 'DM Mono', monospace;
       font-size: 0.67rem;
@@ -160,14 +236,17 @@
       align-items: center;
       gap: 0.4rem;
     }
+
     .live-dot {
       display: inline-block;
-      width: 6px; height: 6px;
+      width: 6px;
+      height: 6px;
       background: var(--accent);
       border-radius: 50%;
       position: relative;
       flex-shrink: 0;
     }
+
     .live-dot::after {
       content: '';
       position: absolute;
@@ -177,10 +256,21 @@
       opacity: 0.35;
       animation: ring 2.2s ease-in-out infinite;
     }
+
     @keyframes ring {
-      0%, 100% { transform: scale(1); opacity: 0.35; }
-      50% { transform: scale(1.7); opacity: 0; }
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: 0.35;
+      }
+
+      50% {
+        transform: scale(1.7);
+        opacity: 0;
+      }
     }
+
     .now-row {
       display: flex;
       justify-content: space-between;
@@ -190,13 +280,18 @@
       border-bottom: 1px solid var(--border);
       font-size: 0.91rem;
     }
-    .now-row:last-child { border-bottom: none; }
+
+    .now-row:last-child {
+      border-bottom: none;
+    }
+
     .nr-meta {
       font-family: 'DM Mono', monospace;
       font-size: 0.67rem;
       color: var(--muted);
       white-space: nowrap;
     }
+
     .now-row a {
       color: var(--text);
       text-decoration: underline;
@@ -204,7 +299,10 @@
       text-underline-offset: 3px;
       transition: text-decoration-color 0.15s;
     }
-    .now-row a:hover { text-decoration-color: var(--accent); }
+
+    .now-row a:hover {
+      text-decoration-color: var(--accent);
+    }
 
     .now-note {
       font-family: 'DM Mono', monospace;
@@ -224,7 +322,13 @@
       flex-wrap: wrap;
       gap: 0.8rem;
     }
-    .foot-links { display: flex; gap: 1.1rem; align-items: center; }
+
+    .foot-links {
+      display: flex;
+      gap: 1.1rem;
+      align-items: center;
+    }
+
     .foot-links a {
       color: var(--muted);
       text-decoration: none;
@@ -232,8 +336,15 @@
       display: flex;
       align-items: center;
     }
-    .foot-links a:hover { color: var(--text); }
-    .foot-links a svg { display: block; }
+
+    .foot-links a:hover {
+      color: var(--text);
+    }
+
+    .foot-links a svg {
+      display: block;
+    }
+
     .foot-year {
       font-family: 'DM Mono', monospace;
       font-size: 0.67rem;
@@ -241,207 +352,290 @@
     }
   </style>
 </head>
+
 <body>
-<div class="wrap">
+  <div class="wrap">
 
-  <nav>
-    <span class="nav-name" onclick="show('home')">Pranet Patel</span>
-    <div class="nav-links">
-      <a href="#" id="nav-home"     class="active" onclick="show('home');    return false;">About</a>
-      <a href="#" id="nav-projects"               onclick="show('projects'); return false;">Projects</a>
-      <a href="#" id="nav-now"                    onclick="show('now');      return false;">Now</a>
+    <nav>
+      <span class="nav-name" onclick="show('home')">Pranet Patel</span>
+      <div class="nav-links">
+        <a href="#" id="nav-home" class="active" onclick="show('home');    return false;">About</a>
+        <a href="#" id="nav-projects" onclick="show('projects'); return false;">Projects</a>
+        <a href="#" id="nav-now" onclick="show('now');      return false;">Now</a>
+      </div>
+    </nav>
+
+    <!-- HOME -->
+    <div id="home" class="page active">
+      <p class="greeting">Hey, I'm Pranet.</p>
+
+      <p class="bio">Engineering student at Western (Ivey AEO). Co-founder at <a href="https://ayvidmedia.com"
+          target="_blank">Ayvid Media</a>.</p>
+
+      <p class="label">building</p>
+      <ul class="arrow-list">
+        <li><span class="arr">↳</span>Intern @ GENIE AI — building <a href="https://runbos.ai"
+            target="_blank">runbos.ai</a>, making more websites and integrating their AI</li>
+        <li><span class="arr">↳</span><a href="https://ayvidmedia.com" target="_blank">Ayvid Media</a> — co-founded a
+          digital transformation agency delivering AI-powered web solutions</li>
+        <li><span class="arr">↳</span>RP4CC — building a campaign software to manage everything from GIS to donations
+          and CRM</li>
+        <li><span class="arr">↳</span>DIY golf simulator — building one from scratch, in progress</li>
+      </ul>
+
+      <p class="label">projects</p>
+      <ul class="arrow-list">
+        <li><span class="arr">↳</span><a href="https://github.com/pranetpatel/AlarmCC" target="_blank">AlarmCC</a> —
+          automated technical alarm response system utilizing OpenAI, Node.js, and Vonage</li>
+        <li><span class="arr">↳</span><a href="https://github.com/pranetpatel/OTnotes" target="_blank">OT-Notes</a> —
+          mobile application with speech-to-text integration for specialized session documentation</li>
+        <li><span class="arr">↳</span><a href="https://github.com/pranetpatel/Temple-AI" target="_blank">Temple-AI</a> —
+          ML system helping temples personalize programs + track attendance via QR codes</li>
+      </ul>
+
+      <p class="label">previously</p>
+      <ul class="arrow-list">
+        <li><span class="arr">↳</span>AI Engineer @ Nexa Technology — built AI pricing algorithm and chatbot using
+          Python and PyTorch</li>
+        <li><span class="arr">↳</span>Business Development @ Sitespan</li>
+        <li><span class="arr">↳</span>Field Technician — installed security cameras and NAS systems in residential and
+          commercial properties</li>
+        <li><span class="arr">↳</span>Swim Instructor &amp; Deck Supervisor @ Super Swims</li>
+      </ul>
+
     </div>
-  </nav>
 
-  <!-- HOME -->
-  <div id="home" class="page active">
-    <p class="greeting">Hey, I'm Pranet.</p>
+    <!-- PROJECTS -->
+    <div id="projects" class="page">
+      <div>
 
-    <p class="bio">Engineering student at Western (Ivey AEO). Co-founder at <a href="https://ayvidmedia.com" target="_blank">Ayvid Media</a>.</p>
+        <div class="proj">
+          <div class="proj-top">
+            <a class="proj-name" href="https://ayvidmedia.com" target="_blank">Ayvid Media</a>
+            <span class="proj-lang">Next.js · React · TypeScript</span>
+          </div>
+          <p class="proj-desc">Digital transformation agency delivering AI-powered web solutions. Features an AI quote
+            system and live chat. Deployed with Docker and Vercel.</p>
+        </div>
 
-    <p class="label">building</p>
-    <ul class="arrow-list">
-      <li><span class="arr">↳</span><a href="https://ayvidmedia.com" target="_blank">Ayvid Media</a> — co-founded a digital transformation agency delivering AI-powered web solutions</li>
-      <li><span class="arr">↳</span><a href="https://github.com/pranetpatel/Temple-AI" target="_blank">Temple-AI</a> — ML system helping temples personalize programs + track attendance via QR codes, runs offline on Raspberry Pi</li>
-      <li><span class="arr">↳</span>DIY golf simulator — building one from scratch, in progress</li>
-      <li><span class="arr">↳</span><a href="https://github.com/pranetpatel/cortex" target="_blank">Cortex</a> — stealth, more soon</li>
-    </ul>
+        <div class="proj">
+          <div class="proj-top">
+            <a class="proj-name" href="https://github.com/pranetpatel/Temple-AI" target="_blank">Temple-AI</a>
+            <span class="proj-lang">Python · Flask · PyTorch</span>
+          </div>
+          <p class="proj-desc">AI system that helps temples personalize daily programs using demographic insights and
+            ML. Tracks attendance via QR codes, analyzes visitor trends, and suggests optimal programs, menus, and
+            sermon topics. Runs offline on a Raspberry Pi via Docker.</p>
+        </div>
 
-    <p class="label">previously</p>
-    <ul class="arrow-list">
-      <li><span class="arr">↳</span>AI Engineer @ Nexa Technology — built AI pricing algorithm and chatbot using Python and PyTorch</li>
-      <li><span class="arr">↳</span>Business Development @ Sitespan</li>
-      <li><span class="arr">↳</span>Field Technician — installed security cameras and NAS systems in residential and commercial properties</li>
-      <li><span class="arr">↳</span>Swim Instructor &amp; Deck Supervisor @ Super Swims</li>
-    </ul>
+        <div class="proj">
+          <div class="proj-top">
+            <a class="proj-name" href="https://github.com/pranetpatel/OTnotes" target="_blank">OT-Notes</a>
+            <span class="proj-lang">React Native · Expo · Supabase</span>
+          </div>
+          <p class="proj-desc">A mobile application designed for occupational therapists and specialized swim
+            instructors to document session notes efficiently. Features speech-to-text integration for hands-free
+            assessments.</p>
+        </div>
+
+        <div class="proj">
+          <div class="proj-top">
+            <a class="proj-name" href="https://github.com/pranetpatel/AlarmCC" target="_blank">AlarmCC</a>
+            <span class="proj-lang">Node.js · OpenAI · Vonage</span>
+          </div>
+          <p class="proj-desc">An automated response system that replaces technical alarm personnel. Leverages OpenAI to
+            handle technical alarms autonomously, utilizing Vonage for telephony and Resend for email alerts.</p>
+        </div>
+
+        <div class="proj">
+          <div class="proj-top">
+            <span class="proj-name">DIY Golf Simulator</span>
+            <span class="proj-lang">in progress</span>
+          </div>
+          <p class="proj-desc">Building a full golf simulator from scratch: hardware, software, and everything in
+            between.</p>
+        </div>
+
+        <div class="proj">
+          <div class="proj-top">
+            <a class="proj-name" href="https://github.com/pranetpatel/windowcleaningrobot" target="_blank">Window
+              cleaning robot</a>
+            <span class="proj-lang">TypeScript</span>
+          </div>
+          <p class="proj-desc">Scheduling and control interface for a window-cleaning robot. Built for the ES1050
+            engineering design course at Western.</p>
+        </div>
+
+        <div class="proj">
+          <div class="proj-top">
+            <a class="proj-name" href="https://github.com/pranetpatel/MorseCode-Arduino"
+              target="_blank">MorseCode-Arduino</a>
+            <span class="proj-lang">C++ · Python</span>
+          </div>
+          <p class="proj-desc">Sends Morse code from Python to Arduino over serial to blink an LED. A clean
+            hardware/software bridge, more satisfying than it sounds.</p>
+        </div>
+
+        <div class="proj">
+          <div class="proj-top">
+            <a class="proj-name" href="https://github.com/pranetpatel/Arduino-Oscilloscope"
+              target="_blank">Arduino-Oscilloscope</a>
+            <span class="proj-lang">Python</span>
+          </div>
+          <p class="proj-desc">Real-time signal visualisation using Arduino as the ADC and Python for rendering. Built
+            to understand signal sampling and serial data pipelines.</p>
+        </div>
+
+        <div class="proj">
+          <div class="proj-top">
+            <a class="proj-name" href="https://github.com/pranetpatel/cortex" target="_blank">Cortex</a>
+            <span class="proj-lang">in progress</span>
+          </div>
+          <p class="proj-desc">In progress. More soon.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- NOW -->
+    <div id="now" class="page">
+
+      <div class="now-block">
+        <h2><span class="live-dot"></span>right now</h2>
+        <div class="now-row">
+          <span>Ivey AEO @ Western</span>
+          <span class="nr-meta">year 1</span>
+        </div>
+        <div class="now-row">
+          <span>Engineering Intern @ GENIE AI</span>
+          <span class="nr-meta">active</span>
+        </div>
+        <div class="now-row">
+          <span>Co-founder @ Ayvid Media</span>
+          <span class="nr-meta">active</span>
+        </div>
+        <div class="now-row">
+          <span>Building the golf sim</span>
+          <span class="nr-meta">in progress</span>
+        </div>
+        <div class="now-row">
+          <span>Finished a marathon</span>
+          <span class="nr-meta">completed</span>
+        </div>
+      </div>
+
+      <div class="now-block">
+        <h2>reading</h2>
+        <div class="now-row">
+          <span>The Art of Letting Go — Nick Trenton</span>
+          <span class="nr-meta">reading</span>
+        </div>
+        <div class="now-row">
+          <span>The Magic of Thinking Big — David J. Schwartz</span>
+          <span class="nr-meta">completed</span>
+        </div>
+        <div class="now-row">
+          <span>How to Have Confidence and Power in Dealing with People — Les Giblin</span>
+          <span class="nr-meta">completed</span>
+        </div>
+        <div class="now-row">
+          <span>The Monk Who Sold His Ferrari — Robin Sharma</span>
+          <span class="nr-meta">completed</span>
+        </div>
+        <div class="now-row">
+          <span>The Rules of Work — Richard Templar</span>
+          <span class="nr-meta">up next</span>
+        </div>
+      </div>
+
+      <div class="now-block">
+        <h2>listening</h2>
+        <div class="now-row">
+          <span><a href="https://open.spotify.com/track/6A1gvxMuw4NFLLfPoY5JTK" target="_blank">Private Party —
+              offtide!</a></span>
+          <span class="nr-meta">on repeat</span>
+        </div>
+        <div class="now-row">
+          <span><a href="https://open.spotify.com/track/3hZbi8AG14hRw5Skg7V8pl?si=58b3a3bba57342e2"
+              target="_blank">Classic — Drake</a></span>
+          <span class="nr-meta">on repeat</span>
+        </div>
+        <div class="now-row">
+          <span><a href="https://open.spotify.com/show/2MAi0BvDc6GTFvKFPXnkCL" target="_blank">Lex Fridman
+              Podcast</a></span>
+          <span class="nr-meta">podcast</span>
+        </div>
+        <div class="now-row">
+          <span><a href="https://open.spotify.com/show/7vz4RYsD5MulTCrcH478t1" target="_blank">The Mel Robbins
+              Podcast</a></span>
+          <span class="nr-meta">podcast</span>
+        </div>
+      </div>
+
+      <p class="now-note">Last updated May 2026</p>
+    </div>
+
+    <footer>
+      <div class="foot-links">
+        <a href="https://github.com/pranetpatel" target="_blank" aria-label="GitHub">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/pranet-patel-8b97772ba/" target="_blank" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/pranetpatel_/" target="_blank" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@pranet_p" target="_blank" aria-label="TikTok">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+          </svg>
+        </a>
+        <a href="mailto:p2patel252@gmail.com" aria-label="Email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+        </a>
+        <a href="/resume.pdf" target="_blank" rel="noopener" aria-label="Resume">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <line x1="10" y1="9" x2="8" y2="9" />
+          </svg>
+        </a>
+      </div>
+      <span class="foot-year">2026 © Pranet Patel</span>
+    </footer>
 
   </div>
-
-  <!-- PROJECTS -->
-  <div id="projects" class="page">
-    <div>
-
-      <div class="proj">
-        <div class="proj-top">
-          <a class="proj-name" href="https://ayvidmedia.com" target="_blank">Ayvid Media</a>
-          <span class="proj-lang">Next.js · React · TypeScript</span>
-        </div>
-        <p class="proj-desc">Digital transformation agency delivering AI-powered web solutions. Features an AI quote system and live chat. Deployed with Docker and Vercel.</p>
-      </div>
-
-      <div class="proj">
-        <div class="proj-top">
-          <a class="proj-name" href="https://github.com/pranetpatel/Temple-AI" target="_blank">Temple-AI</a>
-          <span class="proj-lang">Python · Flask · PyTorch</span>
-        </div>
-        <p class="proj-desc">AI system that helps temples personalize daily programs using demographic insights and ML. Tracks attendance via QR codes, analyzes visitor trends, and suggests optimal programs, menus, and sermon topics. Runs offline on a Raspberry Pi via Docker.</p>
-      </div>
-
-      <div class="proj">
-        <div class="proj-top">
-          <span class="proj-name">DIY Golf Simulator</span>
-          <span class="proj-lang">in progress</span>
-        </div>
-        <p class="proj-desc">Building a full golf simulator from scratch — hardware, software, and everything in between.</p>
-      </div>
-
-      <div class="proj">
-        <div class="proj-top">
-          <a class="proj-name" href="https://github.com/pranetpatel/windowcleaningrobot" target="_blank">Window cleaning robot</a>
-          <span class="proj-lang">TypeScript</span>
-        </div>
-        <p class="proj-desc">Scheduling and control interface for a window-cleaning robot. Built for the ES1050 engineering design course at Western.</p>
-      </div>
-
-      <div class="proj">
-        <div class="proj-top">
-          <a class="proj-name" href="https://github.com/pranetpatel/MorseCode-Arduino" target="_blank">MorseCode-Arduino</a>
-          <span class="proj-lang">C++ · Python</span>
-        </div>
-        <p class="proj-desc">Sends Morse code from Python to Arduino over serial to blink an LED. A clean hardware/software bridge — more satisfying than it sounds.</p>
-      </div>
-
-      <div class="proj">
-        <div class="proj-top">
-          <a class="proj-name" href="https://github.com/pranetpatel/Arduino-Oscilloscope" target="_blank">Arduino-Oscilloscope</a>
-          <span class="proj-lang">Python</span>
-        </div>
-        <p class="proj-desc">Real-time signal visualisation using Arduino as the ADC and Python for rendering. Built to understand signal sampling and serial data pipelines.</p>
-      </div>
-
-      <div class="proj">
-        <div class="proj-top">
-          <a class="proj-name" href="https://github.com/pranetpatel/cortex" target="_blank">Cortex</a>
-          <span class="proj-lang">in progress</span>
-        </div>
-        <p class="proj-desc">In progress. More soon.</p>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- NOW -->
-  <div id="now" class="page">
-
-    <div class="now-block">
-      <h2><span class="live-dot"></span>right now</h2>
-      <div class="now-row">
-        <span>Ivey AEO @ Western</span>
-        <span class="nr-meta">year 1</span>
-      </div>
-      <div class="now-row">
-        <span>Co-founder @ Ayvid Media</span>
-        <span class="nr-meta">active</span>
-      </div>
-      <div class="now-row">
-        <span>Building the golf sim</span>
-        <span class="nr-meta">in progress</span>
-      </div>
-      <div class="now-row">
-        <span>Training for a marathon</span>
-        <span class="nr-meta">May 3rd</span>
-      </div>
-    </div>
-
-    <div class="now-block">
-      <h2>reading</h2>
-      <div class="now-row">
-        <span>The Art of Letting Go — Nick Trenton</span>
-        <span class="nr-meta">reading</span>
-      </div>
-      <div class="now-row">
-        <span>The Magic of Thinking Big — David J. Schwartz</span>
-        <span class="nr-meta">completed</span>
-      </div>
-      <div class="now-row">
-        <span>How to Have Confidence and Power in Dealing with People — Les Giblin</span>
-        <span class="nr-meta">completed</span>
-      </div>
-      <div class="now-row">
-        <span>The Monk Who Sold His Ferrari — Robin Sharma</span>
-        <span class="nr-meta">completed</span>
-      </div>
-      <div class="now-row">
-        <span>The Rules of Work — Richard Templar</span>
-        <span class="nr-meta">up next</span>
-      </div>
-    </div>
-
-    <div class="now-block">
-      <h2>listening</h2>
-      <div class="now-row">
-        <span><a href="https://open.spotify.com/track/6A1gvxMuw4NFLLfPoY5JTK" target="_blank">Private Party — offtide!</a></span>
-        <span class="nr-meta">on repeat</span>
-      </div>
-      <div class="now-row">
-        <span><a href="https://open.spotify.com/track/3RPP2rryn9UBDMg2NFBhop" target="_blank">When You Need Me — Avenoir</a></span>
-        <span class="nr-meta">on repeat</span>
-      </div>
-      <div class="now-row">
-        <span><a href="https://open.spotify.com/show/2MAi0BvDc6GTFvKFPXnkCL" target="_blank">Lex Fridman Podcast</a></span>
-        <span class="nr-meta">podcast</span>
-      </div>
-      <div class="now-row">
-        <span><a href="https://open.spotify.com/show/7vz4RYsD5MulTCrcH478t1" target="_blank">The Mel Robbins Podcast</a></span>
-        <span class="nr-meta">podcast</span>
-      </div>
-    </div>
-
-    <p class="now-note">Last updated April 2026</p>
-  </div>
-
-  <footer>
-    <div class="foot-links">
-      <a href="https://github.com/pranetpatel" target="_blank" aria-label="GitHub">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/pranet-patel-8b97772ba/" target="_blank" aria-label="LinkedIn">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-      </a>
-      <a href="https://www.instagram.com/pranetpatel_/" target="_blank" aria-label="Instagram">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
-      </a>
-      <a href="https://www.tiktok.com/@pranet_p" target="_blank" aria-label="TikTok">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
-      </a>
-      <a href="mailto:p2patel252@gmail.com" aria-label="Email">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-      </a>
-      <a href="/resume.pdf" target="_blank" rel="noopener" aria-label="Resume">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
-      </a>
-    </div>
-    <span class="foot-year">2026 © Pranet Patel</span>
-  </footer>
-
-</div>
-<script>
-  function show(id) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-    document.getElementById('nav-' + id).classList.add('active');
-  }
-</script>
+  <script>
+    function show(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.getElementById('nav-' + id).classList.add('active');
+    }
+  </script>
 </body>
+
 </html>
