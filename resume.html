@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pranet Patel — Resume</title>
+  <style>
+    @page { size: letter; margin: 0.52in 0.58in; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      background: #fff;
+      color: #111;
+      font-family: "Calibri", "Segoe UI", Arial, sans-serif;
+      font-size: 10.4pt;
+      line-height: 1.28;
+    }
+    a { color: inherit; text-decoration: none; }
+    header { text-align: center; margin-bottom: 10px; }
+    h1 {
+      font-size: 20pt;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+    .contact {
+      margin-top: 4px;
+      font-size: 9.4pt;
+      color: #222;
+    }
+    .contact span { margin: 0 0.15em; color: #888; }
+    h2 {
+      font-size: 10pt;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-bottom: 1.4px solid #111;
+      padding-bottom: 2px;
+      margin: 11px 0 6px;
+    }
+    .job { margin-bottom: 8px; }
+    .job-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+    .role { font-weight: 700; }
+    .dates { white-space: nowrap; font-size: 9.5pt; }
+    .org {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      font-style: italic;
+      margin-bottom: 2px;
+    }
+    .org .right { font-style: normal; white-space: nowrap; }
+    ul { padding-left: 16px; margin: 0; }
+    li { margin: 1px 0; }
+    .skills p { margin: 1px 0; }
+    .skills strong { font-weight: 700; }
+    .edu-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .certs { margin-top: 2px; }
+    @media screen {
+      body { max-width: 8.5in; margin: 24px auto; padding: 0.52in 0.58in; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pranet Patel</h1>
+    <p class="contact">
+      647-507-7308
+      <span>|</span>
+      <a href="mailto:p2patel252@gmail.com">p2patel252@gmail.com</a>
+      <span>|</span>
+      <a href="https://www.linkedin.com/in/pranet-patel-8b97772ba/">linkedin.com/in/pranet-patel</a>
+      <span>|</span>
+      <a href="https://pranetpatel.vercel.app/">pranetpatel.vercel.app</a>
+    </p>
+  </header>
+
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <p><strong>Languages &amp; Frameworks:</strong> TypeScript, JavaScript, Python, Next.js, React, Vite, Node.js, Three.js, Framer Motion, Flask</p>
+    <p><strong>AI &amp; ML:</strong> LLM integration (Claude, ChatGPT), prompt engineering, PyTorch, OpenCV, speech / TTS pipelines</p>
+    <p><strong>Full Stack &amp; DevOps:</strong> Vercel, Supabase, MongoDB, PostgreSQL, REST APIs, Git/GitHub, Docker, Linux/Windows</p>
+    <p><strong>Product systems:</strong> Auth, bank sync (Plaid), transactional email (Postmark), admin consoles, PWA</p>
+  </div>
+
+  <h2>Experience &amp; Projects</h2>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="role">Software Engineer Intern</span>
+      <span class="dates">Apr 2026 – Sep 2026</span>
+    </div>
+    <div class="org">
+      <span>GENIE AI / BOS — shipped production products across the studio</span>
+      <span class="right">runbos.ai · ryzn.one · lingua.family</span>
+    </div>
+    <ul>
+      <li>Shipped six live sites: BOS marketing (<a href="https://runbos.ai">runbos.ai</a>), Ryzn (<a href="https://ryzn.one">ryzn.one</a>), Lingua (<a href="https://www.lingua.family">lingua.family</a>), Brass Tally (<a href="https://brasstally.com">brasstally.com</a>), BOS MBA (<a href="https://bosmba.com">bosmba.com</a>), and <a href="https://genieai.io">genieai.io</a>.</li>
+      <li>Built product surfaces end-to-end — immersive marketing, mentor matching and org admin, family language-tutor PWA, bookkeeping with Plaid bank sync, and an MBA apply/portal flow with Postmark email.</li>
+      <li>Owned Vercel production deploys, GitHub workflows, and handoff docs (auth, env, migrations) so the team could run each product after this phase.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="role">Co-Founder &amp; Technical Lead</span>
+      <span class="dates">Mar 2026 – Present</span>
+    </div>
+    <div class="org">
+      <span>Ayvid Media — digital transformation agency generating $4K+ CAD monthly</span>
+      <span class="right">ayvidmedia.com</span>
+    </div>
+    <ul>
+      <li>Built a Next.js / React / TypeScript platform deployed on Vercel with Docker.</li>
+      <li>Developed an AI quote system and live chat assistant using LLM integration and prompt engineering.</li>
+      <li>Used Claude Code and Cursor for AI-assisted development, accelerating feature delivery by ~40%.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="role">AI Engineer</span>
+      <span class="dates">Nov 2025 – Feb 2026</span>
+    </div>
+    <div class="org">
+      <span>Nexa Technology Inc — AI-powered agricultural marketplace</span>
+      <span class="right">Greater Toronto Area, ON</span>
+    </div>
+    <ul>
+      <li>Built an AI pricing algorithm (~95% accuracy) and a customer chatbot (~90% satisfaction).</li>
+      <li>Defined backend requirements: data inputs, ML pipeline specs, and model architecture.</li>
+      <li>Authored training prompts and reference solutions for production LLM performance.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="role">Temple AI System</span>
+      <span class="dates">Jul 2025 – Nov 2025</span>
+    </div>
+    <div class="org">
+      <span>Full-stack analytics with ML-powered program recommendations</span>
+      <span class="right">Python · Flask · React · Docker</span>
+    </div>
+    <ul>
+      <li>Shipped a web app with a JS/TS frontend, Flask backend, and real-time analytics; QR check-in with JWT auth.</li>
+      <li>Ran an on-device PyTorch model on Raspberry Pi via Docker; quantization cut inference time by ~30%.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="role">Golf Simulator System</span>
+      <span class="dates">Dec 2025 – Present</span>
+    </div>
+    <div class="org">
+      <span>Custom launch monitor with computer-vision tracking — in progress</span>
+      <span class="right">Python · OpenCV · Raspberry Pi</span>
+    </div>
+    <ul>
+      <li>Building a full simulator from scratch: metal-conduit frame, dual high-speed cameras, IR floodlights, OpenCV ball tracking (~85% vs range), Raspberry Pi sensor fusion.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="role">Swim Instructor &amp; Deck Supervisor</span>
+      <span class="dates">Feb 2024 – Present</span>
+    </div>
+    <div class="org">
+      <span>Super Swims LTD. — aquatics instruction and facility operations</span>
+      <span class="right">Brampton, ON</span>
+    </div>
+    <ul>
+      <li>Supervised a team of 8+ instructors: scheduling, safety compliance, and daily operations.</li>
+      <li>Built OT-Notes (React Native / Expo / Supabase) to capture session notes and learning plans, saving supervisors ~15 min/hour.</li>
+    </ul>
+  </div>
+
+  <h2>Education</h2>
+  <div class="edu-top">
+    <span><strong>University of Western Ontario</strong> — Bachelor of Engineering Science</span>
+    <span class="dates">Sept 2025 – Present</span>
+  </div>
+  <p>Ivey AEO Scholar, Scholarship of Distinction · London, ON</p>
+
+  <h2>Certifications</h2>
+  <p class="certs">AWS Cloud Practitioner · Cisco Introduction to Cybersecurity · IBM AI Fundamentals · Onshape CAD Associate</p>
+</body>
+</html>
