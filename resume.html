@@ -86,25 +86,9 @@
     </p>
   </header>
 
-  <p class="summary">Engineering Science student at Western (Ivey AEO) who builds AI tools that find margin and cash problems inside small operating businesses. Shipped six production products at GENIE AI and co-run a digital agency generating $4K+ CAD monthly.</p>
+  <p class="summary">Engineering Science student at Western (Ivey AEO) who builds AI tools that find margin and cash problems inside small operating businesses. Shipped six production products at GENIE AI and built Leakfinder, an AI diagnostic for service businesses.</p>
 
   <h2>Experience &amp; Projects</h2>
-
-  <div class="job">
-    <div class="job-top">
-      <span class="role">Leakfinder</span>
-      <span class="dates">Nov 2026</span>
-    </div>
-    <div class="org">
-      <span>AI diagnostic for small HVAC and plumbing businesses</span>
-      <span class="right">TypeScript · Next.js · Claude API · <a href="https://github.com/pranetpatel/leakfinder">github.com/pranetpatel/leakfinder</a></span>
-    </div>
-    <ul>
-      <li>Reads a CSV of past jobs and ranks the biggest leaks with a dollar figure and confidence note: jobs priced below labour plus parts, technician price gaps, lapsed repeat customers, invoices unpaid 60+ days, and seasonality.</li>
-      <li>Claude drafts a suggested fix for each finding. A person approves every draft, customer data stays in the browser, and a checker flags any number the model adds that was not in the source data.</li>
-      <li>Tested on a 794-job synthetic dataset with planted problems; 22 automated tests confirm every planted leak is found.</li>
-    </ul>
-  </div>
 
   <div class="job">
     <div class="job-top">
@@ -116,24 +100,9 @@
       <span class="right">runbos.ai · ryzn.one · lingua.family</span>
     </div>
     <ul>
-      <li>Shipped six live products: BOS marketing (<a href="https://runbos.ai">runbos.ai</a>), Ryzn (<a href="https://ryzn.one">ryzn.one</a>), Lingua (<a href="https://www.lingua.family">lingua.family</a>), Brass Tally (<a href="https://brasstally.com">brasstally.com</a>), BOS MBA (<a href="https://bosmba.com">bosmba.com</a>), and <a href="https://genieai.io">genieai.io</a>.</li>
-      <li>Built the business-facing systems behind them: org admin and mentor matching, bookkeeping with Plaid bank sync and AI receipt extraction, and an MBA application and learner portal with Postmark email.</li>
+      <li>Shipped six live products: runbos.ai, ryzn.one, lingua.family, brasstally.com, bosmba.com, and genieai.io.</li>
+      <li>Built org admin and mentor matching, Plaid bank sync with AI receipt extraction, and an MBA portal with Postmark email.</li>
       <li>Owned production deploys and handoff docs (auth, env, migrations) so the team could run each product without me.</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <div class="job-top">
-      <span class="role">Co-Founder &amp; Technical Lead</span>
-      <span class="dates">Mar 2026 – Present</span>
-    </div>
-    <div class="org">
-      <span>Ayvid Media, digital transformation agency generating $4K+ CAD monthly</span>
-      <span class="right">ayvidmedia.com</span>
-    </div>
-    <ul>
-      <li>Built a Next.js / React / TypeScript platform deployed on Vercel with Docker.</li>
-      <li>Developed an AI quote system and live chat assistant using LLM integration and prompt engineering; AI-assisted development (Claude Code, Cursor) cut feature delivery time by about 40%.</li>
     </ul>
   </div>
 
@@ -147,7 +116,8 @@
       <span class="right">Greater Toronto Area, ON</span>
     </div>
     <ul>
-      <li>Built an AI pricing algorithm (~95% accuracy) and a customer chatbot (~90% satisfaction); defined data inputs, ML pipeline specs, and model architecture.</li>
+      <li>Built an AI pricing algorithm (~95% accuracy) and a customer chatbot (~90% satisfaction).</li>
+      <li>Defined data inputs, ML pipeline specs, and model architecture for the backend.</li>
     </ul>
   </div>
 
@@ -162,30 +132,43 @@
     </div>
     <ul>
       <li>Supervise a team of 8+ instructors: scheduling, safety compliance, and daily operations.</li>
-      <li>Built OT-Notes (React Native / Expo / Supabase) to capture session notes and learning plans, saving supervisors ~15 min/hour.</li>
+      <li>Built OT-Notes (React Native / Expo / Supabase), saving supervisors ~15 min/hour on session notes.</li>
     </ul>
   </div>
 
   <div class="job">
     <div class="job-top">
-      <span class="role">Temple AI System &amp; Golf Simulator</span>
-      <span class="dates">Jul 2025 – Present</span>
+      <span class="role">Golf Simulator System</span>
+      <span class="dates">Dec 2025 – 2026</span>
     </div>
     <div class="org">
-      <span>Technical projects</span>
-      <span class="right">Python · Flask · PyTorch · OpenCV · Docker</span>
+      <span>Custom launch monitor with computer-vision tracking, completed</span>
+      <span class="right">Python · OpenCV · Raspberry Pi</span>
     </div>
     <ul>
-      <li>Temple AI: Flask and React analytics app with ML program recommendations, QR check-in, and an on-device PyTorch model on Raspberry Pi; quantization cut inference time by ~30%.</li>
-      <li>Golf simulator (in progress): built from scratch with dual high-speed cameras and OpenCV ball tracking (~85% vs range).</li>
+      <li>Built and finished the full simulator: dual high-speed cameras, IR lighting, and OpenCV ball tracking (~85% vs range).</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top">
+      <span class="role">Leakfinder</span>
+      <span class="dates">Nov 2026</span>
+    </div>
+    <div class="org">
+      <span>AI tool that finds money leaks in small HVAC and plumbing businesses</span>
+      <span class="right"><a href="https://github.com/pranetpatel/leakfinder">github.com/pranetpatel/leakfinder</a></span>
+    </div>
+    <ul>
+      <li>Ranks leaks from a CSV of past jobs with dollar figures; Claude drafts fixes a person approves; 22 tests pass.</li>
     </ul>
   </div>
 
   <h2>Technical Skills</h2>
   <div class="skills">
-    <p><strong>AI &amp; Data:</strong> LLM integration (Claude, OpenAI), prompt engineering, output validation, CSV and financial data analysis, PyTorch, OpenCV</p>
-    <p><strong>Languages &amp; Infrastructure:</strong> TypeScript, JavaScript, Python, Next.js, React, Node.js, Flask, Vercel, Supabase, PostgreSQL, MongoDB, Docker, Git/GitHub</p>
-    <p><strong>Business Systems:</strong> margin and pricing analysis, accounts receivable, bank sync (Plaid), CRM and quote tools, transactional email (Postmark), admin consoles</p>
+    <p><strong>AI &amp; Data:</strong> LLM integration (Claude, OpenAI), prompt engineering, financial data analysis, PyTorch, OpenCV</p>
+    <p><strong>Languages &amp; Infrastructure:</strong> TypeScript, Python, Next.js, React, Node.js, Flask, Vercel, Supabase, PostgreSQL, Docker, Git</p>
+    <p><strong>Business Systems:</strong> margin and pricing analysis, accounts receivable, bank sync (Plaid), CRM and quote tools, email (Postmark)</p>
   </div>
 
   <h2>Education &amp; Certifications</h2>
